@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 });
 
 // Route
-app.get("/path", (req, res) => {
+app.get("/api/path", (req, res) => {
   res.send("assalamu'alaikum");
 });
 
