@@ -1,0 +1,14 @@
+CREATE DATABASE integers;
+
+USE integers;
+
+CREATE OR REPLACE TABLE mahasiswa (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nama VARCHAR(30),
+	umur INT
+
+);
+
+INSERT INTO mahasiswa (nama, umur) VALUES
+	('BAGAS RIZKY HERDIANSYAH PUTRA', 21),
+	('BAGAS', 22);
