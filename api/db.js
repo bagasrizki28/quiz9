@@ -3,10 +3,10 @@ import pkg from "pg";
 const { Client } = pkg;
 
 const client = new Client({
-    host: "localhost",
+    host: "db.aekdbzirudnmxzgatrkc.supabase.co",
     user: "postgres",
-    password: "bagas123",
-    database: "integer",
+    password: "bagasrizky123",
+    database: "postgres",
     port: 5432
 
 });
