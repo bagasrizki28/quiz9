@@ -1,5 +1,5 @@
 import express from "express";
-import { Client } from "api/db.js";
+import { client } from "./db.js";
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.get("/api/salam", (req, res) => {
 });
 
 app.get("/api/mahasiswa", async (req, res) => {
-    const result = await Client.query("SELECT * FROM mahasiswa");
+    const result = await client.query("SELECT * FROM mahasiswa");
     res.send(result.rows);
   });
 
